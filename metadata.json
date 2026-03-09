@@ -1,0 +1,17 @@
+{
+    "title": "Sample Solution: Python Recursive Fibonacci Function",
+    "slug": "sample-solution-python-recursive-fibonacci",
+    "description": "Worked recursive Fibonacci solution in Python with base cases and a simple input-validation guard.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "sample-solution",
+        "python"
+    ],
+    "duration": 3,
+    "prerequisites": [
+        "exercise-python-recursive-fibonacci"
+    ],
+    "related": []
+}

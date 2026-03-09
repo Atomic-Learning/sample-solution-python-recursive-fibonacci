@@ -1,0 +1,22 @@
+<h2>Sample Solution</h2>
+
+<p>We know that $F(0) = 0$ and $F(1) = 1$, so we can define both base cases. It happens that we can detect and treat these cases together to reduce the amount of code that must be written and executed each time the function is called. To do this, if <code class="language-python">n</code> is less than <code class="language-python">2</code>, we return <code class="language-python"></code>n</code>. If this <code class="language-python">return</code> statement is not executed, we can call the function recursively and add together the results.</p>
+
+<py-cell>def fibonacci(n):
+    if n < 2:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)</py-cell>
+
+<h2>Step 3: Test the function</h2>
+<py-cell>
+print(fibonacci(-4))
+print(fibonacci(1.2))
+print(fibonacci(0))
+print(fibonacci(1))
+print(fibonacci(2))
+print(fibonacci(8))
+</py-cell>
+
+<h2>Discussion</h2>
+
+<p>This recursive implementation of the Fibonacci function is elegant and directly follows the mathematical definition. However, as (while <code class="language-python">n</code> is greater than <code class="language-python">1</code>) it recursively calls itself twice, the number of function calls increases dramatically as <code class="language-python">n</code> increases. This leads to an exponential tim  e complexity due to repeated calculations of the same Fibonacci numbers. For large values of <code class="language-python">n</code>, this can be very slow. Alternative approaches allow for faster computation.</p>
